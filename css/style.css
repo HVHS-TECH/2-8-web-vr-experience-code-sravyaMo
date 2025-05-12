@@ -1,12 +1,14 @@
 body {
 background-image: url("/Images/mainBackground.png");
 background-repeat: no-repeat;
-background-size: 300px 100px;
+background-size: 1538px 750px;
 }
 
 h1 {
   color: white;
   text-align: center;
+  letter-spacing: 10px;
+  font-size: 110px;
 }
 
 p {
