@@ -1,7 +1,25 @@
 body {
-background-image: url("/Images/mainBackground.png");
-background-repeat: no-repeat;
-background-size: 1538px 750px;
+  font-family: Courier;
+  background-image: url("/Images/mainBackground.png");
+  background-repeat: no-repeat;
+  background-size: 1400px 700px;
+}
+
+button {
+  padding: 15px 10px;
+  font-size: 37px;
+  cursor: pointer;
+  border: none;
+  border-radius: 18px;
+  background-color: #e27e3b;
+  color: #fff;
+  transition: background-color 0.3ss;
+  width: 450px; /* Set a fixed width */
+  text-align: center;
+}
+
+button:hover {
+    background-color: #f57e4f;
 }
 
 h1 {
