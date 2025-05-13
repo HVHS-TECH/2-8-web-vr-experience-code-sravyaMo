@@ -1,8 +1,5 @@
 body {
   font-family: Courier;
-  background-image: url("/Images/mainBackground.png");
-  background-repeat: no-repeat;
-  background-size: 1400px 700px;
 }
 
 button {
