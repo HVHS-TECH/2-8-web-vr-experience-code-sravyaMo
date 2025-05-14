@@ -2,7 +2,7 @@ body {
   font-family: Courier;
   background-image: url("/Images/bg1.png");
    background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1400px 640px;
   height: 500px;
   position: absolute;
 }
