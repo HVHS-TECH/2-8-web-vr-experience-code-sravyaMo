@@ -4,7 +4,7 @@ body {
    background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  position: relative;
+  position: absolute;
 }
 
 .column {
@@ -14,22 +14,24 @@ body {
   }
 
 button {
-  padding: 15px 10px;
-  font-size: 37px;
+  padding: 12px 35px;
+  width: 200px; 
+  font-size: 35px;
+  text-align: center;
+  position: sticky;
+  bottom: 400px;
+  left: 16px;
   cursor: pointer;
   border: none;
-  border-radius: 18px;
+  border-radius: none;
   background-color: #e27e3b;
-  color: #fff;
-  transition: background-color 0.3ss;
-  width: 450px; /* Set a fixed width */
-  text-align: center;
-  bottom: 100px;
-  right: 500px;
+  color: #130101;
+  transition-duration: 0.4s;
 }
 
 button:hover {
-    background-color: #f57e4f;
+    background-color: #4d2a1c;
+    color: rgb(250, 248, 248);
 }
 
 h1 {
