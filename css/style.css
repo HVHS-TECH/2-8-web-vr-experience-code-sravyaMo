@@ -2,7 +2,7 @@ body {
   font-family: Courier;
   background-image: url("/Images/bg1.png");
    background-repeat: no-repeat;
-  background-size: 1400px 640px;
+  background-size: cover;
   height: 500px;
   position: absolute;
 }
@@ -11,6 +11,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 340px;
+  margin-left: 50px;
   }
 
 button {
@@ -18,9 +20,6 @@ button {
   width: 200px; 
   font-size: 35px;
   text-align: center;
-  position: sticky;
-  bottom: 400px;
-  left: 16px;
   cursor: pointer;
   border: none;
   border-radius: none;
