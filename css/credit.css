@@ -24,6 +24,12 @@ button {
   transition-duration: 0.4s;
 }
 
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+
 button:hover {
      background-color: #4d2a1c;
     color: rgb(250, 248, 248);
