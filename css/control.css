@@ -1,20 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Londrinah&display=swap');
 body {
   font-family: Courier;
   background-image: url("/Images/controlBg.png");
   background-repeat: no-repeat;
   background-size: 1365px 680px;
   height: 100px;
-  position: absolute;
 }
 
 .column {
   margin-top: 340px;
   margin-left: 50px;
+  position: relative;
   }
 
 button {
+  font-family: 'Londrina Solid', sans-serif;
   padding: 12px 35px;
-  width: 200px; 
+  width: 140px; 
   font-size: 35px;
   text-align: center;
   cursor: pointer;
@@ -23,6 +25,9 @@ button {
   background-color: #e27e3b;
   color: #130101;
   transition-duration: 0.4s;
+  position: absolute;
+  top: 53px;
+  left: 65px;
 }
 
 button:hover {

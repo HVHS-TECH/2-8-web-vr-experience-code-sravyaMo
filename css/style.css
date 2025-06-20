@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Londrinah&display=swap');
+
 body {
-  font-family: Courier;
+  font-family: Londrina Solid;
   background-image: url("/Images/bg1.png");
    background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +18,7 @@ body {
   }
 
 button {
+  font-family: 'Londrina Solid', sans-serif;
   padding: 12px 35px;
   width: 200px; 
   font-size: 35px;
@@ -29,7 +32,7 @@ button {
 }
 
 button:hover {
-    background-color: #4d2a1c;
+    background-color: #19851b;
     color: rgb(250, 248, 248);
 }
 

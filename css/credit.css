@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Londrinah&display=swap');
 body {
   font-family: Courier;
   background-image: url("/Images/birdBg.png");
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
   }
 
 button {
+  font-family: 'Londrina Solid', sans-serif;
   padding: 12px 35px;
   width: 200px; 
   font-size: 35px;
@@ -22,13 +29,10 @@ button {
   background-color: #e27e3b;
   color: #130101;
   transition-duration: 0.4s;
-}
-
-.bottomleft {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
+  top: 10px;
+  left: 65px;
+}
 
 button:hover {
      background-color: #4d2a1c;
