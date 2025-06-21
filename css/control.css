@@ -16,22 +16,22 @@ body {
 button {
   font-family: 'Londrina Solid', sans-serif;
   padding: 12px 35px;
-  width: 140px; 
+  width: 150px; 
   font-size: 35px;
   text-align: center;
   cursor: pointer;
   border: none;
-  border-radius: none;
+  border-radius: 50px;
   background-color: #e27e3b;
   color: #130101;
   transition-duration: 0.4s;
   position: absolute;
-  top: 53px;
-  left: 65px;
+  top: 45px;
+  left: 50px;
 }
 
 button:hover {
-    background-color: #4d2a1c;
+    background-color: #1e3f1a;
     color: rgb(250, 248, 248);
 }
 
@@ -45,4 +45,13 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
+}
+
+strong {
+  font-family: verdana;
+  font-size: 30px;
+  color: azure;
+  position: absolute;
+  top: 200px;
+  left: 380px;
 }
