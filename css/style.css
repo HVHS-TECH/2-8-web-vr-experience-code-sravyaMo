@@ -25,14 +25,14 @@ button {
   text-align: center;
   cursor: pointer;
   border: none;
-  border-radius: none;
+  border-radius: 50px;
   background-color: #e27e3b;
   color: #130101;
   transition-duration: 0.4s;
 }
 
 button:hover {
-    background-color: #19851b;
+    background-color: #1e3f1a;
     color: rgb(250, 248, 248);
 }
 
