@@ -8,42 +8,44 @@
 </head>
 
 <body>
-  <a-scene>
+  <script src="/amani.js"></script>
+  <a-scene raycaster="objects: .clickable">
     <a-sky src="../scenery/gradient.svg" scale="-1 0.1 -70"></a-sky>
     <a-plane id="setEnviroment" color="#bcc785" position="0 0.2 0" 
     rotation="-90 0 0" scale="100 100 1"></a-plane>
 
-    <a-gltf-model id="wasteland" src="../scenery/wasteland.glb" position="30 0.166 24"
-    scale="1 0.5 2.1"></a-gltf-model>
+    <a-gltf-model id="wasteland" src="../scenery/wasteland.glb" position="25.620 0.166 24.000"
+    scale="1.960 0.5 2.1"></a-gltf-model>
     <a-sphere id="wl" color="#3e3e3c" radius="0.25"
     position="34 0.50 38"></a-sphere>
 
     <a-gltf-model id="et_grass" src="../Models/grass.glb"
-    position="47 0.166 -35" scale="0.001 0.001 0.001"></a-gltf-model>
+    position="41.681 0.166 -43.878" scale="0.010 0.006 0.010"></a-gltf-model>
     <a-sphere id="et" color="#949451" radius="0.25"
     position="40 0.50 -35"></a-sphere>
 
     <a-gltf-model id="cave" src="../scenery/cave.glb"
-    position="-1.799 0.166 1.861" scale="2.050 1.610 2.260"></a-gltf-model>
+    position="-6.338 0.166 -4.888" scale="2.050 1.610 2.260"></a-gltf-model>
     <a-sphere id="ca" color="#989886" radius="0.25"
     position="5 0 3"></a-sphere>
 
     <a-gltf-model id="waterfall" src="../scenery/waterfall.glb"
-    position="-43.466 0.166 41.535" scale="4.840 1.920 5.670"></a-gltf-model>
+    position="-39.874 0.166 37.799" scale="9.150 1.920 11.320"></a-gltf-model>
     <a-sphere id="wt" color="#50d377" radius="0.25"
     position="-39.766 0.500 35.301"></a-sphere>
-
-    <a-gltf-model id="am_baobabTree" src="../Models/am_baobab.glb"
-    position="-24.273 0.166 -32.838" scale="1.410 1.260 1.510"></a-gltf-model>
 
     <a-gltf-model id="mountain1" src="../Models/mountain.glb"
     position="-33.471 0.166 -6.028" scale="0.170 0.150 0.110"></a-gltf-model>
     <a-gltf-model id="mountain2" src="../Models/mountain.glb"
-    position="1.678 0.166 -10.028" scale="0.170 0.150 0.110"></a-gltf-model>
+    position="-6.620 0.166 -33.052" scale="0.170 0.150 0.110" rotation="0 90.000 0"></a-gltf-model>
 
+    <a-gltf-model id="am_baobabTree" src="../Models/am_baobab.glb"
+    position="-24.273 0.166 -32.838" scale="1.410 1.260 1.510"></a-gltf-model>
     <a-sphere id="am" color="#e524d5" radius="0.25"
     position="-42.2 0.50 -35"></a-sphere>
 
+    <a-text id="sText" position="-1.827 0.786 40.532" width="4" color="white"
+    value="Welcome to Safari Ya Amani!"></a-text>
     <a-camera position="-0.403 0.300 42.246" rotation="0 0 0" look-controls>
       <a-cursor></a-cursor>
     </a-camera>
