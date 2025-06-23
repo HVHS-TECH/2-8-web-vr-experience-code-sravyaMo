@@ -14,8 +14,11 @@
     <a-plane id="setEnviroment" color="#bcc785" position="0 0.2 0" 
     rotation="-90 0 0" scale="100 100 1"></a-plane>
 
-    <a-gltf-model id="wasteland" src="../scenery/wasteland.glb" position="25.620 0.166 24.000"
+    <a-gltf-model id="wasteland" class="clickable"
+    src="../scenery/wasteland.glb" position="25.620 0.166 24.000"
     scale="1.960 0.5 2.1"></a-gltf-model>
+    <a-text id="wasteText" position="25.620 2.0 24.000" width="4" color="yellow"
+    value="I am the result of timber harvesting, charcoal manufacturing, and many other harmful actions" visible="false"></a-text>
     <a-sphere id="wl" color="#3e3e3c" radius="0.25"
     position="34 0.50 38"></a-sphere>
 
@@ -26,6 +29,12 @@
 
     <a-gltf-model id="cave" src="../scenery/cave.glb"
     position="-6.338 0.166 -4.888" scale="2.050 1.610 2.260"></a-gltf-model>
+    <a-gltf-model id="ca_baboon" class="clickable" src="../Models/baboon.glb"
+    position="-6.856 0.166 9.971" scale="0.070 0.060 0.03"></a-gltf-model>
+    <a-text id="baboonText" position="-6.856 1.5 9.971" width="4" color="yellow"
+    value="Hi, did you know that we baboons live in large groups
+    called troops which have about 3000 of us!" visible="false"></a-text>
+
     <a-sphere id="ca" color="#989886" radius="0.25"
     position="5 0 3"></a-sphere>
 
@@ -39,17 +48,54 @@
     <a-gltf-model id="mountain2" src="../Models/mountain.glb"
     position="-6.620 0.166 -33.052" scale="0.170 0.150 0.110" rotation="0 90.000 0"></a-gltf-model>
 
-    <a-gltf-model id="am_baobabTree" src="../Models/am_baobab.glb"
+    <a-gltf-model id="am_baobabTree" class="clickable" src="../Models/am_baobab.glb"
     position="-24.273 0.166 -32.838" scale="1.410 1.260 1.510"></a-gltf-model>
+    <a-text id="tree" position="-6.856 1.5 9.971" width="4" color="yellow"
+    value="Its funny, I am known as upside down trees because my branches look like roots." visible="false"></a-text>
     <a-sphere id="am" color="#e524d5" radius="0.25"
     position="-42.2 0.50 -35"></a-sphere>
 
-    <a-text id="sText" position="-1.827 0.786 40.532" width="4" color="white"
-    value="Welcome to Safari Ya Amani!"></a-text>
+    <a-text id="fText" position="-1.827 0.786 40.532" width="4" color="white"
+    value="Explore, click on any interesting stuff, learn, and have fun!"></a-text>
     <a-camera position="-0.403 0.300 42.246" rotation="0 0 0" look-controls>
       <a-cursor></a-cursor>
     </a-camera>
     <a-light id="dir" type="directional" intensity="1" position="-10 20 5"></a-light>
     <a-light id="ambient" type="ambient" intensity="1" position="5 10 10"></a-light>
   </a-scene>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var baboon = document.querySelector('#ca_baboon');
+        var baboonText = document.querySelector('#baboonText');
+        if (baboon && baboonText) {
+          baboon.addEventListener('click', function () {
+            baboonText.setAttribute('visible', 'true');
+            setTimeout(function() {
+              baboonText.setAttribute('visible', 'false');
+            }, 3000); // Hide after 3 seconds
+          });
+        }
+        var wasteland = document.querySelector('#wasteland');
+        var wasteText = document.querySelector('#wasteText');
+        if (wasteland && wasteText) {
+          wasteland.addEventListener('click', function () {
+            wasteText.setAttribute('visible', 'true');
+            setTimeout(function() {
+              wasteText.setAttribute('visible', 'false');
+            }, 3000); // Hide after 3 seconds
+          });
+        }
+        var baobab = document.querySelector('#am_baobabTree');
+        var baobabText = document.querySelector('#tree');
+        if (baobab && baobabText) {
+          baobab.addEventListener('click', function () {
+            baobabText.setAttribute('visible', 'true');
+            setTimeout(function() {
+              baobabText.setAttribute('visible', 'false');
+            }, 3000); // Hide after 3 seconds
+          });
+        }
+      });
+    </script>
 </body>
